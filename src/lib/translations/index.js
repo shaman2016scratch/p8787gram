@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 const translations = {
     en: {
         settings: "settings",
@@ -25,7 +23,10 @@ const translations = {
     }
 }
 
-const [ locale, setLocale ] = useState("en")
+let locale = "en"
+const setLocale = (v) => {
+    locale = v
+}
 
 export default translations
 export { locale, setLocale }

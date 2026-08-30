@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import metadata from "../../lib/metadata.js";
 
 const Footer = () => {
@@ -5,6 +6,13 @@ const Footer = () => {
         <footer>
             <div class="container">
 				<p class='footer-text'>🄯 GNU GPL v3</p>
+                <p class='footer-text'><FormattedMessage
+                    id="footer.platform"
+                    values={{
+                        name: metadata.name,
+                        version: metadata.version
+                    }}
+                /></p>
             </div>
         </footer>
     )

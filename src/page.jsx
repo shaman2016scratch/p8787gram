@@ -9,7 +9,7 @@ const Page = ({url}) => {
                 <div>
                     <h1><FormattedMessage
                         id="main.label"
-                        value={{ name: metadata.name }}
+                        values={{ name: metadata.name }}
                     /></h1>
                     <p><a href="./client"><FormattedMessage
                         id="main.webclient.link"

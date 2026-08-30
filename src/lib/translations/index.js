@@ -7,8 +7,10 @@ const translations = {
         "footer.platform": "Official, {name} v{version}",
         "login.title": "Login",
         "login.button": "login",
+        "login.toReg": "Switch to register",
         "register.title": "Register",
-        "register.button": "register"
+        "register.button": "register",
+        "register.toLogin": "Switch to login"
     },
     ru: {
         settings: "настройки",
@@ -18,8 +20,10 @@ const translations = {
         "footer.platform": "Официально, {name} v{version}",
         "login.title": "Вход",
         "login.button": "Войти",
+        "login.toReg": "Перейти к регестрации",
         "register.title": "Регестрация",
-        "register.button": "Зарегистрироваться"
+        "register.button": "Зарегистрироваться",
+        "register.toLogin": "Перейти к входу"
     }
 }
 

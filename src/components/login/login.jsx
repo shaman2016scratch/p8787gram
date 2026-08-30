@@ -114,6 +114,11 @@ const LoginComponent = ({setToken}) => {
 				disabled={loading}>
 				<FormattedMessage id="login.button" />
 			</button>
+            <button
+				onClick={() => { setMode("register") }}
+				disabled={loading}>
+				<FormattedMessage id="login.toReg" />
+			</button>
             </>) : (<>
             <h1><FormattedMessage
                 id="register.title"
@@ -142,6 +147,11 @@ const LoginComponent = ({setToken}) => {
 				onClick={() => handleRegister()}
 				disabled={loading}>
 				<FormattedMessage id="register.button" />
+			</button>
+            <button
+				onClick={() => { setMode("login") }}
+				disabled={loading}>
+				<FormattedMessage id="register.toLogin" />
 			</button>
             </>)}
         </>

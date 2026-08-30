@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Chats from "../../components/chats/chats.js"
+import Chats from "../../components/chats/chats.jsx"
 import LoginComponent from "../../components/login/login.jsx"
 import "./index.css"
 

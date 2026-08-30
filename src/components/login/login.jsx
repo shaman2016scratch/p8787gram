@@ -139,7 +139,7 @@ const LoginComponent = ({setToken}) => {
 				type="password"
 				placeholder="password"
 				disabled={loading}
-				value={inputPssword}
+				value={inputPassword}
 				onChange={(e) => setInputPassword(e.target.value)}
 			/>
 			{error && <p className="error">{error}</p>}

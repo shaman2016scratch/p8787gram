@@ -4,6 +4,7 @@ import "./index.css"
 
 const LoginComponent = ({setToken}) => {
     const [mode, setMode] = useState("login")
+    const [inputName, setInputName] = useState("")
     const [inputUsername, setInputUsername] = useState("")
     const [inputPassword, setInputPassword] = useState("")
     const [error, setError] = useState(null)
@@ -69,7 +70,8 @@ const LoginComponent = ({setToken}) => {
                     },
                     body: {
                         username: inputUsername,
-                        password: inputPassword
+                        password: inputPassword,
+                        name: inputName
                     }
                 }
 			);
@@ -117,6 +119,12 @@ const LoginComponent = ({setToken}) => {
                 id="register.title"
             /></h1>
             <input
+				type="text"
+				placeholder="name"
+				disabled={loading}
+				value={inputName}
+				onChange={(e) => setInputName(e.target.value)}
+			/><input
 				type="text"
 				placeholder="username"
 				disabled={loading}

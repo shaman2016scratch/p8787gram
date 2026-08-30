@@ -5,6 +5,12 @@
   "license": "GPL-3.0",
   "author": "polzovatel_8787",
   "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "react": "^19.2.8",
     "react-dom": "^19.2.8",

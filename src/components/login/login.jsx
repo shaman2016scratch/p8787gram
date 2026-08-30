@@ -8,7 +8,7 @@ const LoginComponent = ({setToken}) => {
     const [inputUsername, setInputUsername] = useState("")
     const [inputPassword, setInputPassword] = useState("")
     const [error, setError] = useState(null)
-    const [loading, setLoading] = userState(false)
+    const [loading, setLoading] = useState(false)
     const handleLogin = async () => {
         try {
 			setError(null);

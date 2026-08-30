@@ -4,7 +4,7 @@ const translations = { /* TODO: Fix English */
     en: {
         settings: "settings",
         status: "status",
-        "main.label": "[name] - Messenger new gen!",
+        "main.label": "[name] - Messenger of new gen!",
         "main.webclient.link": "Use web version",
         "footer.platform": "Official, [name] v[version]"
     },

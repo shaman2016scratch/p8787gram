@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FormattedMessage } from "react-intl";
-import "./index.css"
+import "./login.css"
 
 const LoginComponent = ({setToken}) => {
     const [mode, setMode] = useState("login")

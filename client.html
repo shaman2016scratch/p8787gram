@@ -1,9 +1,50 @@
 <html>
     <head>
         <title>p8787gram client</title>
+        <script src="https://cdn.jsdelivr.net/npm/libsignal-protocol@1.3.15/dist/libsignal-protocol.min.js"></script>
     </head>
     <body>
         <div id="root"></div>
+        <script>
+            var KeyHelper = libsignal.KeyHelper;
+
+            var registrationId = KeyHelper.generateRegistrationId();
+
+            KeyHelper.generateIdentityKeyPair().then(function(identityKeyPair) {
+            });
+
+            KeyHelper.generatePreKey(keyId).then(function(preKey) {
+                store.storePreKey(preKey.keyId, preKey.keyPair);
+            });
+
+            KeyHelper.generateSignedPreKey(identityKeyPair, keyId).then(function(signedPreKey) {
+                store.storeSignedPreKey(signedPreKey.keyId, signedPreKey.keyPair);
+            });
+            var store   = new MySignalProtocolStore();
+            var address = new libsignal.SignalProtocolAddress(recipientId, deviceId);
+            var sessionBuilder = new libsignal.SessionBuilder(store, address);
+            var promise = sessionBuilder.processPreKey({
+                registrationId,
+                identityKey: <ArrayBuffer>,
+                signedPreKey: {
+                    keyId     : <Number>,
+                    publicKey : <ArrayBuffer>,
+                    signature : <ArrayBuffer>
+                },
+                preKey: {
+                    keyId     : <Number>,
+                    publicKey : <ArrayBuffer>
+                }
+            });
+
+            promise.then(function onsuccess() {
+  // encrypt messages
+            });
+
+            promise.catch(function onerror(error) {
+  // handle identity key conflict
+            });
+        </script>
         <script type="module" src="./src/index.jsx"></script>
     </body>
 </html>

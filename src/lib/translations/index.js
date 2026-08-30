@@ -4,12 +4,14 @@ const translations = {
     en: {
         settings: "settings",
         status: "status",
-        label: "[name] - Messenger new gen!" // TODO: fix english
+        "main.label": "[name] - Messenger new gen!", // TODO: fix english
+        "main.webclient.link": "Web version"
     },
     ru: {
         settings: "настройки",
         status: "статус",
-        label: "[name] - Мессенджер нового поколения!"
+        "main.label": "[name] - Мессенджер нового поколения!",
+        "main.webclient.link": "Веб-версия"
     }
 }
 

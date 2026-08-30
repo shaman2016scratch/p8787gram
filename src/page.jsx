@@ -3,18 +3,21 @@ import metadata from "./lib/metadata.js"
 
 const Page = ({url}) => {
     return (
-        <div>
+        <>
             {(url === "/") ? (
                 <div>
                     <h1><FormattedMessage
-                        id="label"
+                        id="main.label"
                         value={{ name: metadata.name }}
                     /></h1>
+                    <p><a href="./client"><FormattedMessage
+                        id="main.webclient.link"
+                    /></a></p>
                 </div>
             ) : (url === "/client" || url === "/client.html") ? (
                 <div></div>
             ) : null}
-        </div>
+        </>
     )
 }
 

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { IntlProvider } from "react-intl";
 import translations, { locale } from "./lib/translations/index.js";
 import Page from "./page.jsx";
@@ -9,9 +8,11 @@ const App = () => {
 	const page = window.location.pathname.split("/p8787gram")[1]
 	return (
 		<IntlProvider locale={locale} messages={translations[locale]}>
-			<TopPanel />
-			<Page url={page} />
-			<Footer />
+			<div class="app-viewport">
+				<TopPanel />
+				<Page url={page} />
+				<Footer />
+			</div>
 		</IntlProvider>
 	)
 };

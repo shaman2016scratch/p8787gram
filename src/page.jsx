@@ -1,5 +1,6 @@
 import { FormattedMessage } from "react-intl"
 import metadata from "./lib/metadata.js"
+import WebClient from "./pages/client/index.jsx"
 
 const Page = ({url}) => {
     return (
@@ -15,7 +16,7 @@ const Page = ({url}) => {
                     /></a></p>
                 </div>
             ) : (url === "/client" || url === "/client.html") ? (
-                <div></div>
+                <WebClient />
             ) : null}
         </>
     )

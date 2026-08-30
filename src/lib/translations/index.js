@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const translations = { /* TODO: Fix English */
+const translations = {
     en: {
         settings: "settings",
         status: "status",

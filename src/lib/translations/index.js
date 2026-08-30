@@ -8,7 +8,9 @@ const translations = {
         "main.webclient.link": "Use web version",
         "footer.platform": "Official, [name] v[version]",
         "login.title": "Login",
-        "login.button": "login"
+        "login.button": "login",
+        "register.title": "Register",
+        "register.button": "register"
     },
     ru: {
         settings: "настройки",
@@ -17,7 +19,9 @@ const translations = {
         "main.webclient.link": "Использовать веб-версию",
         "footer.platform": "Официально, [name] v[version]",
         "login.title": "Вход",
-        "login.button": "Войти"
+        "login.button": "Войти",
+        "register.title": "Регестрация",
+        "register.button": "Зарегистрироваться"
     }
 }
 

@@ -1,5 +1,6 @@
 import { FormattedMessage } from "react-intl";
 import metadata from "../../lib/metadata.js";
+import "./footer.css"
 
 const Footer = () => {
     return (

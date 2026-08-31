@@ -1,4 +1,5 @@
 import metadata from "../../lib/metadata.js";
+import "./tp.css"
 
 const TopPanel = () => {
 	return (

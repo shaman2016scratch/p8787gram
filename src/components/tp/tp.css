@@ -1,0 +1,16 @@
+.top-panel {
+    background-color: #ff0000;
+    color: #02b3ff;
+    padding: 10px;
+    text-align: center;
+}
+ .top-panel a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 20px;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

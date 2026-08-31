@@ -52,7 +52,11 @@ const LoginComponent = ({setToken}) => {
     const handleRegister = async () => {
         try {
 			setError(null);
-			if (!inputUsername.trim()) {
+			if (!inputName.trim()) {
+				setError("Name is required");
+				return;
+			}
+            if (!inputUsername.trim()) {
 				setError("Username is required");
 				return;
 			}

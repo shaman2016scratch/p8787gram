@@ -10,7 +10,8 @@ const translations = {
         "login.toReg": "Switch to register",
         "register.title": "Register",
         "register.button": "register",
-        "register.toLogin": "Switch to login"
+        "register.toLogin": "Switch to login",
+        "main.webclient": "Web-version"
     },
     ru: {
         settings: "настройки",
@@ -23,7 +24,8 @@ const translations = {
         "login.toReg": "Перейти к регестрации",
         "register.title": "Регестрация",
         "register.button": "Зарегистрироваться",
-        "register.toLogin": "Перейти к входу"
+        "register.toLogin": "Перейти к входу",
+        "main.webclient": "Веб-версия"
     }
 }
 

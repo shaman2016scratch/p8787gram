@@ -84,12 +84,12 @@ const LoginComponent = ({setToken}) => {
 				setToken(res.result);
 				setLoading(false);
 			} else {
-				setError("Failed to login");
+				setError("Failed register");
 				setLoading(false);
 			}
 		} catch (error) {
 			console.error(error);
-			setError("Error during login");
+			setError("Error during register");
 			setLoading(false);
 		}
     }

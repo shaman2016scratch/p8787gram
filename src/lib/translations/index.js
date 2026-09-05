@@ -34,5 +34,10 @@ const setLocale = (v) => {
     locale = v
 }
 
+const addCustom = (o, l, d) => {
+    o[l] = d
+    return o
+}
+
 export default translations
-export { locale, setLocale }
+export { locale, setLocale, addCustom }

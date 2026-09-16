@@ -1,4 +1,3 @@
-import { addCustom } from ".";
 import translations, { addCustom } from "./";
 
 let customLangs = []
@@ -21,5 +20,6 @@ const addTrans = async (tranUrl, id) => {
 export {
     customLangs,
     customTrans,
-    mergeTrans
+    mergeTrans,
+    addTrans
 }

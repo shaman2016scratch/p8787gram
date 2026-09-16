@@ -10,11 +10,11 @@ const App = () => {
 	const trans = mergeTrans()
 	return (
 		<IntlProvider locale={locale} messages={(customLangs.length === 0) ? translations[locale] : trans}>
+			<TopPanel />
 			<div class="app-viewport">
-				<TopPanel />
 				<Page url={page} />
-				<Footer />
 			</div>
+			<Footer />
 		</IntlProvider>
 	)
 };

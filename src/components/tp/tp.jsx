@@ -8,7 +8,7 @@ const TopPanel = () => {
             <a href="/p8787gram/">
                 {metadata.name}
             </a>
-            <FormattedMessage id="main.webclient" />
+            <a href="./client"><FormattedMessage id="main.webclient" /></a>
         </div>
 	)
 }

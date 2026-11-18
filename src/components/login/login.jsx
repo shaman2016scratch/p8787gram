@@ -1,3 +1,4 @@
+import { useProxy, apiUrl } from "../../lib/proxy.js";
 import { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import "./login.css"
@@ -22,7 +23,7 @@ const LoginComponent = ({setToken}) => {
 			}
 			setLoading(true);
 			const response = await fetch(
-				"https://p8787gram-api.loca.lt/login",
+				`${useProxy ? apiUrl : metadata.apiUrl}/login`,
                 {
                     method: "POST",
                     headers: {
@@ -66,7 +67,7 @@ const LoginComponent = ({setToken}) => {
 			}
 			setLoading(true);
 			const response = await fetch(
-				"https://p8787gram-api.loca.lt/register",
+				`${useProxy ? apiUrl : metadata.apiUrl}/register`,
                 {
                     method: "POST",
                     headers: {

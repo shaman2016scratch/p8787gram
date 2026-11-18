@@ -1,7 +1,8 @@
+import { apiUrl, useProxy } from "./proxy.js"
 import metadata from "./metadata.js"
 
 const getVersion = async () => {
-    const URL = metadata.apiUrl
+    const URL = useProxy ? apiUrl : metadata.apiUrl
     const req = await fetch(URL, {
         method: "GET",
         headers: {
